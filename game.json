@@ -2857,6 +2857,18 @@
                     "3"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "SkeletonMoving",
+                    "",
+                    "315"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
