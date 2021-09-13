@@ -11,6 +11,7 @@
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
+    "pixelsRounding": false,
     "projectUuid": "84cd327f-0890-4a41-85f9-2229ee48c057",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
@@ -486,8 +487,9 @@
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
+        "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.46119110172167255,
+        "zoomFactor": 0.5093573883809133,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -587,14 +589,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 128,
+          "height": 121,
           "layer": "",
           "locked": false,
           "name": "SabertoothSpawner",
           "persistentUuid": "93f324ca-dbc2-4292-8f5b-d4320aaa98fd",
-          "width": 106,
-          "x": 1315,
-          "y": 408,
+          "width": 112,
+          "x": 1305,
+          "y": 411,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -649,16 +651,16 @@
           "initialVariables": []
         },
         {
-          "angle": 315.1737365722656,
+          "angle": 315,
           "customSize": true,
-          "height": 114.71601867675781,
+          "height": 114,
           "layer": "",
           "locked": false,
-          "name": "DinoBonesSpawmer",
+          "name": "SkeletonSpawmer",
           "persistentUuid": "6729210c-3979-40bd-bc1d-937590abb1a4",
-          "width": 130.5858154296875,
-          "x": 1176.963134765625,
-          "y": 493.35186767578125,
+          "width": 130,
+          "x": 1176,
+          "y": 493,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -696,6 +698,11 @@
             },
             {
               "name": "hits",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "clockSkeleton",
               "type": "number",
               "value": 0
             }
@@ -1558,13 +1565,29 @@
           ]
         },
         {
-          "name": "DinoBonesMoving",
+          "name": "SkeletonMoving",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "TopDown"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -1621,7 +1644,7 @@
           ]
         },
         {
-          "name": "DinoBonesSpawmer",
+          "name": "SkeletonSpawmer",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2048,6 +2071,19 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
+                    "Floor",
+                    "clockSkeleton",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
                     "CaveMan",
                     "coolDown",
                     "+",
@@ -2354,7 +2390,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "CactusSpawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2458,7 +2494,7 @@
                   "parameters": [
                     "CactusMoving",
                     "=",
-                    "0"
+                    "3"
                   ],
                   "subInstructions": []
                 }
@@ -2474,7 +2510,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "MammothSpawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2578,7 +2614,7 @@
                   "parameters": [
                     "MammothMoving",
                     "=",
-                    "0"
+                    "3"
                   ],
                   "subInstructions": []
                 }
@@ -2594,7 +2630,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "SabertoothSpawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2674,7 +2710,7 @@
                   "parameters": [
                     "SabertoothMoving",
                     "=",
-                    "128"
+                    "121"
                   ],
                   "subInstructions": []
                 },
@@ -2686,7 +2722,7 @@
                   "parameters": [
                     "SabertoothMoving",
                     "=",
-                    "106"
+                    "112"
                   ],
                   "subInstructions": []
                 },
@@ -2698,7 +2734,7 @@
                   "parameters": [
                     "SabertoothMoving",
                     "=",
-                    "0"
+                    "3"
                   ],
                   "subInstructions": []
                 }
@@ -2714,7 +2750,127 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
+          "name": "SkeletonSpawner",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Floor",
+                    "clockSkeleton",
+                    ">=",
+                    "1000"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "SkeletonMoving",
+                    "SkeletonSpawmer.X()",
+                    "SkeletonSpawmer.Y()",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Floor",
+                    "clockSkeleton",
+                    "=",
+                    "0\n"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "SkeletonMoving",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "SkeletonMoving",
+                    "=",
+                    "114"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "SkeletonMoving",
+                    "=",
+                    "130"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "SkeletonMoving",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
           "name": "EagleSpawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2818,7 +2974,7 @@
                   "parameters": [
                     "EagleMoving",
                     "=",
-                    "0"
+                    "3"
                   ],
                   "subInstructions": []
                 }
@@ -3060,33 +3216,34 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Points",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "PointsValue",
-                "=",
-                "LargeNumberToString(Floor.Variable(hits))"
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "PointsValue",
+                    "=",
+                    "LargeNumberToString(Floor.Variable(hits))"
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "events": []
             }
           ],
-          "events": []
+          "parameters": []
         }
       ],
       "layers": [
