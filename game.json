@@ -467,19 +467,213 @@
         "name": "bg_desert.jpg",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../brand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\brand.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "height": 550,
+      "name": "Background",
+      "tags": "",
+      "texture": "bg_desert.jpg",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 400,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Adjustment",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.8,
+            "blue": 0.6,
+            "brightness": 1,
+            "contrast": 1,
+            "gamma": 1,
+            "green": 1,
+            "red": 1,
+            "saturation": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Night",
+          "name": "Effect2",
+          "doubleParameters": {
+            "intensity": 0.5,
+            "opacity": 0.5
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": []
+    },
+    {
+      "name": "NameGame",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\brand.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "Points",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Hits:",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "PointsValue",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "height": 32,
+      "name": "Floor",
+      "tags": "",
+      "texture": "NewFile-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [
+        {
+          "name": "clockMammoth",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "clockSabertooth",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "clockEagle",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "clockCactus",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "hits",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "clockSkeleton",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Noise",
+          "name": "Effect",
+          "doubleParameters": {
+            "noise": 0.2
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ]
+    }
+  ],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "hits",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "b": 244,
       "disableInputWhenNotFocused": true,
-      "mangledName": "New_32scene",
-      "name": "New scene",
+      "mangledName": "Game",
+      "name": "Game",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -498,7 +692,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5093573883809133,
+        "zoomFactor": 0.946957388380913,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -515,7 +709,7 @@
           "width": 1539,
           "x": -99,
           "y": 500,
-          "zOrder": 0,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
@@ -529,14 +723,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 107,
+          "height": 184,
           "layer": "",
           "locked": false,
           "name": "Sun",
           "persistentUuid": "fa9c429a-c413-4604-b770-b4c7592fd282",
-          "width": 112,
-          "x": 123,
-          "y": 56,
+          "width": 190,
+          "x": 30,
+          "y": 10,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -674,69 +868,41 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 766,
+          "layer": "",
+          "locked": false,
+          "name": "Background",
+          "persistentUuid": "410b5f66-a764-40b4-8f33-3cd0c5fb5976",
+          "width": 1419,
+          "x": -100,
+          "y": -166,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 58,
+          "layer": "",
+          "locked": false,
+          "name": "NameGame",
+          "persistentUuid": "950bb06b-d867-4a8e-88d4-19f7aa85da8c",
+          "width": 119,
+          "x": 24,
+          "y": 523,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "height": 32,
-          "name": "Floor",
-          "tags": "",
-          "texture": "NewFile-1.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [
-            {
-              "name": "clockMammoth",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "clockSabertooth",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "clockEagle",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "clockCactus",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "hits",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "clockSkeleton",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Noise",
-              "name": "Effect",
-              "doubleParameters": {
-                "noise": 0.2
-              },
-              "stringParameters": {},
-              "booleanParameters": {}
-            }
-          ],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
-              "yGrabOffset": 0
-            }
-          ]
-        },
         {
           "name": "CactusMoving",
           "tags": "",
@@ -826,6 +992,34 @@
               ]
             }
           ]
+        },
+        {
+          "height": 550,
+          "name": "Background",
+          "tags": "",
+          "texture": "bg_desert.jpg",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 400,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 0.6,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
         },
         {
           "name": "CactusSpawner",
@@ -1962,46 +2156,6 @@
               ]
             }
           ]
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "PointsValue",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "0",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "Points",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Hits:",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
         }
       ],
       "events": [
@@ -2874,7 +3028,7 @@
                   },
                   "parameters": [
                     "SkeletonMoving",
-                    "",
+                    "=",
                     "315"
                   ],
                   "subInstructions": []
@@ -3011,7 +3165,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Collision",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3097,10 +3251,9 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarObjet"
+                    "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Floor",
                     "hits",
                     "+",
                     "1"
@@ -3156,10 +3309,9 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarObjet"
+                    "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Floor",
                     "hits",
                     "+",
                     "1"
@@ -3215,13 +3367,156 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarObjet"
+                    "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Floor",
                     "hits",
                     "+",
                     "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "CaveMan",
+                    "CactusMoving",
+                    "",
+                    "",
+                    "no"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndGame\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "CaveMan",
+                    "MammothMoving",
+                    "",
+                    "",
+                    "no"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndGame\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "CaveMan",
+                    "SabertoothMoving",
+                    "",
+                    "",
+                    "no"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndGame\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "CaveMan",
+                    "EagleMoving",
+                    "",
+                    "",
+                    "no"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndGame\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -3237,7 +3532,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Points",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3256,7 +3551,7 @@
                   "parameters": [
                     "PointsValue",
                     "=",
-                    "LargeNumberToString(Floor.Variable(hits))"
+                    "LargeNumberToString(GlobalVariable(hits))"
                   ],
                   "subInstructions": []
                 }
@@ -3346,11 +3641,11 @@
           "layer": "",
           "locked": false,
           "name": "Start",
-          "persistentUuid": "3d75c43b-a28c-4815-8f6b-73c4e0083d04",
+          "persistentUuid": "041cf53d-050b-40f0-af6d-4684e9301a9b",
           "width": 0,
-          "x": 200,
-          "y": 275,
-          "zOrder": 1,
+          "x": 176,
+          "y": 345,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3358,15 +3653,31 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 599,
+          "height": 766,
           "layer": "",
           "locked": false,
           "name": "Background",
-          "persistentUuid": "c739f49c-f405-4d02-badd-bc9c9e275bdf",
-          "width": 800,
-          "x": 0,
-          "y": 1,
-          "zOrder": 2,
+          "persistentUuid": "2d3deed6-8470-44e0-a0fb-74b36f0114b5",
+          "width": 1419,
+          "x": -100,
+          "y": -166,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 184,
+          "layer": "",
+          "locked": false,
+          "name": "Sun",
+          "persistentUuid": "c71c106d-234b-4c01-8f81-618777971d04",
+          "width": 190,
+          "x": 30,
+          "y": 10,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3377,12 +3688,28 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Start",
-          "persistentUuid": "041cf53d-050b-40f0-af6d-4684e9301a9b",
+          "name": "Control",
+          "persistentUuid": "80d01e14-775d-4ed8-8a07-ae9beede4ebd",
           "width": 0,
-          "x": 190,
-          "y": 255,
-          "zOrder": 3,
+          "x": 188,
+          "y": 464,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 307,
+          "layer": "",
+          "locked": false,
+          "name": "NameGame",
+          "persistentUuid": "cbc8c05e-7c47-4988-9fc8-950625088f75",
+          "width": 583,
+          "x": 103,
+          "y": 22,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3390,7 +3717,7 @@
       ],
       "objects": [
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "Start",
           "smoothed": true,
@@ -3398,9 +3725,23 @@
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 12,
+                "innerStrength": 0,
+                "outerStrength": 3
+              },
+              "stringParameters": {
+                "color": "233;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [],
-          "string": "Press any key to start.",
+          "string": "Press \"Space\" to start",
           "font": "",
           "characterSize": 40,
           "color": {
@@ -3410,15 +3751,96 @@
           }
         },
         {
-          "height": 550,
-          "name": "Background",
+          "name": "Sun",
           "tags": "",
-          "texture": "bg_desert.jpg",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 400,
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 1,
+                "outerStrength": 2
+              },
+              "stringParameters": {
+                "color": "#ffffff"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.02500000037252903,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sun.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Control",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": []
+          "behaviors": [],
+          "string": "               Keyboard:\n     \"X\"         -       Throw spear\n \"Space\"     -            Jump",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "GameTitle",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "left",
+            "wordWrap": true
+          }
         }
       ],
       "events": [
@@ -3430,10 +3852,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "AnyKeyPressed"
+                "value": "KeyPressed"
               },
               "parameters": [
-                ""
+                "",
+                "Space"
               ],
               "subInstructions": []
             }
@@ -3446,8 +3869,20 @@
               },
               "parameters": [
                 "",
-                "\"New scene\"",
+                "\"Game\"",
                 "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "hits",
+                "=",
+                "0"
               ],
               "subInstructions": []
             }
@@ -3479,7 +3914,384 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "EndGame",
+      "name": "EndGame",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 766,
+          "layer": "",
+          "locked": false,
+          "name": "Background",
+          "persistentUuid": "dded34d2-114a-4ea4-bec2-492635d5229d",
+          "width": 1419,
+          "x": -113.2578125,
+          "y": -163.01275634765625,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 86,
+          "layer": "",
+          "locked": false,
+          "name": "NameGame",
+          "persistentUuid": "b273630e-f212-41e9-8175-e54159dcd44b",
+          "width": 142,
+          "x": 317,
+          "y": 497,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 29,
+          "layer": "",
+          "locked": false,
+          "name": "PointsValue",
+          "persistentUuid": "5afdc6a2-9b7e-4aad-bc1d-4b8a146d0686",
+          "width": 99,
+          "x": 430,
+          "y": 151,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Points",
+          "persistentUuid": "bf58ae06-c5a6-46bc-830f-27fcd43edd3f",
+          "width": 0,
+          "x": 325,
+          "y": 150,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "GameOver",
+          "persistentUuid": "896c3b09-7410-4076-9c81-a4cf6ed03e97",
+          "width": 0,
+          "x": 237,
+          "y": 69,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Restart",
+          "persistentUuid": "893536e9-0c94-466d-b2ff-c367a883264c",
+          "width": 0,
+          "x": 237,
+          "y": 218,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Credits",
+          "persistentUuid": "31c2103b-2c35-4ebe-999a-60a4630d5267",
+          "width": 0,
+          "x": 289,
+          "y": 377,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 184,
+          "layer": "",
+          "locked": false,
+          "name": "Sun",
+          "persistentUuid": "d116e20d-b08f-4c71-bde0-94405185e067",
+          "width": 190,
+          "x": 17,
+          "y": 16,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": true,
+          "italic": false,
+          "name": "GameOver",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "GAME OVER",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "Sun",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Night",
+              "name": "Effect",
+              "doubleParameters": {
+                "intensity": 0.5,
+                "opacity": 0.5
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.02500000037252903,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sun.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Restart",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 20,
+                "innerStrength": 0,
+                "outerStrength": 3
+              },
+              "stringParameters": {
+                "color": "204;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "string": "Press R to play again",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Credits",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": " Henry Jun Nishimura\nMatheus da Silva Sato\n Samual Vieira Ducca\n    Vitor Dias Souza",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 235,
+            "g": 235,
+            "r": 243
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "r"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Intro\"",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "PointsValue",
+                "=",
+                "LargeNumberToString(GlobalVariable(hits))"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 1,
+          "ambientLightColorG": 134217728,
+          "ambientLightColorR": 1597132097,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [],
