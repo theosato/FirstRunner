@@ -476,6 +476,24 @@
         "name": "..\\brand.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bg_mountains.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bg_mountains.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bg_dunes.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bg_dunes.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1008,7 +1026,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.946957388380913,
+        "zoomFactor": 0.7469573883809132,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1025,7 +1043,7 @@
           "width": 1539,
           "x": -99,
           "y": 500,
-          "zOrder": 1,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
@@ -1188,22 +1206,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 766,
-          "layer": "",
-          "locked": false,
-          "name": "Background",
-          "persistentUuid": "410b5f66-a764-40b4-8f33-3cd0c5fb5976",
-          "width": 1419,
-          "x": -100,
-          "y": -166,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 58,
           "layer": "",
           "locked": false,
@@ -1213,6 +1215,38 @@
           "x": 24,
           "y": 523,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 396,
+          "layer": "",
+          "locked": false,
+          "name": "Bg_mountains",
+          "persistentUuid": "8714f9ad-b1c1-4521-aa7e-95a873326840",
+          "width": 1154,
+          "x": -1,
+          "y": -82,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 712,
+          "layer": "",
+          "locked": false,
+          "name": "Bg_dunes",
+          "persistentUuid": "810074fc-054b-420a-8959-d490132f7ea0",
+          "width": 1141,
+          "x": -2,
+          "y": -69,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1335,6 +1369,28 @@
               "booleanParameters": {}
             }
           ],
+          "behaviors": []
+        },
+        {
+          "height": 32,
+          "name": "Bg_mountains",
+          "tags": "",
+          "texture": "bg_mountains.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "height": 32,
+          "name": "Bg_dunes",
+          "tags": "",
+          "texture": "bg_dunes.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
           "behaviors": []
         },
         {
@@ -3868,6 +3924,53 @@
                     "PointsValue",
                     "=",
                     "LargeNumberToString(GlobalVariable(hits))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Background parallax",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Bg_dunes",
+                    "+",
+                    "50*TimeDelta()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Bg_mountains",
+                    "+",
+                    "15*TimeDelta()"
                   ],
                   "subInstructions": []
                 }
