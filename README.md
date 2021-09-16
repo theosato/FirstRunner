@@ -3,7 +3,7 @@
 
  This game is a project to "Design e Programação de Games" subject of POLI USP. 
  
- Creators:
+ Made by:
 - Henry Jun Nishimura - 9833065
 - Matheus da Silva Sato - 9833200
 - Samuel Vieira Ducca - 9833169
