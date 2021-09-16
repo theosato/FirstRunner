@@ -530,6 +530,33 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/firstRunner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\firstRunner.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../../../../Downloads/assets/firstRunner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\..\\..\\..\\Downloads\\assets\\firstRunner.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "firstRunner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firstRunner.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -592,7 +619,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "..\\brand.png",
+                  "image": "firstRunner.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -803,14 +830,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 307,
+          "height": 261,
           "layer": "",
           "locked": false,
           "name": "NameGame",
           "persistentUuid": "cbc8c05e-7c47-4988-9fc8-950625088f75",
-          "width": 583,
-          "x": 103,
-          "y": 22,
+          "width": 575,
+          "x": 121,
+          "y": 37,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -4427,9 +4454,9 @@
           "locked": false,
           "name": "NameGame",
           "persistentUuid": "b273630e-f212-41e9-8175-e54159dcd44b",
-          "width": 142,
-          "x": 317,
-          "y": 497,
+          "width": 171,
+          "x": 306,
+          "y": 502,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
