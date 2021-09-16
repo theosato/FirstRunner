@@ -717,6 +717,11 @@
           "name": "clockSkeleton",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "clock",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [
@@ -1230,22 +1235,6 @@
           "x": 1176,
           "y": 493,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 58,
-          "layer": "",
-          "locked": false,
-          "name": "NameGame",
-          "persistentUuid": "950bb06b-d867-4a8e-88d4-19f7aa85da8c",
-          "width": 119,
-          "x": 24,
-          "y": 523,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2049,26 +2038,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.2,
-                "blur": 0.2,
-                "distance": 0.1,
-                "padding": 0,
-                "quality": 0.2,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "DestroyOutside",
@@ -2137,26 +2107,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.5,
-                "blur": 0.5,
-                "distance": 1,
-                "padding": 0,
-                "quality": 1,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "Platform",
@@ -2420,26 +2371,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.5,
-                "blur": 0.5,
-                "distance": 1,
-                "padding": 0,
-                "quality": 1,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "Platform",
@@ -2565,26 +2497,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.5,
-                "blur": 0.5,
-                "distance": 1,
-                "padding": 0,
-                "quality": 1,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "Platform",
@@ -2794,6 +2707,54 @@
                     "coolDown",
                     "+",
                     "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Floor",
+                    "clock",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Floor",
+                    "clock",
+                    "=",
+                    "300000"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndGame\"",
+                    ""
                   ],
                   "subInstructions": []
                 }
