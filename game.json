@@ -601,7 +601,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "firstRunner.png",
+                  "image": "assets\\firstRunner.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
