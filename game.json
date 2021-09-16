@@ -54,51 +54,12 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "NewFile-1.png",
+        "file": "assets/floor.png",
         "kind": "image",
         "metadata": "",
         "name": "NewFile-1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/tiled_Green Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_Green Background.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Adventure Pack/Background/tiled_Green Background.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/tiled_ green substance floor.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_ green substance floor.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Industrial Platformer Pack (110 assets)/PNG/Retina/tiled_ green substance floor.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/bush (3).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bush (3).png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Generic Backgrounds/Background Objects/Retina/bush (3).png",
-          "name": "gdevelop-asset-store"
-        }
       },
       {
         "alwaysLoaded": false,
@@ -115,20 +76,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Sun.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Sun.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Generic Backgrounds/Background Objects/Retina/Sun.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "caveman.png",
+        "file": "assets/caveman.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman.png",
@@ -137,7 +85,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman2.png",
+        "file": "assets/caveman2.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman2.png",
@@ -146,7 +94,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman3.png",
+        "file": "assets/caveman3.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman3.png",
@@ -155,7 +103,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman22.png",
+        "file": "assets/caveman22.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman22.png",
@@ -164,7 +112,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman32.png",
+        "file": "assets/caveman32.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman32.png",
@@ -173,7 +121,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "spear.png",
+        "file": "assets/spear.png",
         "kind": "image",
         "metadata": "",
         "name": "spear.png",
@@ -182,7 +130,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "sabertooth.png",
+        "file": "assets/sabertooth.png",
         "kind": "image",
         "metadata": "",
         "name": "sabertooth.png",
@@ -191,7 +139,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "mammoth.png",
+        "file": "assets/mammoth.png",
         "kind": "image",
         "metadata": "",
         "name": "mammoth.png",
@@ -200,7 +148,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "eagle.png",
+        "file": "assets/eagle.png",
         "kind": "image",
         "metadata": "",
         "name": "eagle.png",
@@ -209,7 +157,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman4.png",
+        "file": "assets/caveman4.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman4.png",
@@ -218,7 +166,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run1.png",
+        "file": "assets/caveman_run1.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run1.png",
@@ -227,7 +175,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run2.png",
+        "file": "assets/caveman_run2.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run2.png",
@@ -236,7 +184,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run3.png",
+        "file": "assets/caveman_run3.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run3.png",
@@ -245,7 +193,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run4.png",
+        "file": "assets/caveman_run4.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run4.png",
@@ -254,7 +202,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run5.png",
+        "file": "assets/caveman_run5.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run5.png",
@@ -263,7 +211,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run6.png",
+        "file": "assets/caveman_run6.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run6.png",
@@ -272,7 +220,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run7.png",
+        "file": "assets/caveman_run7.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run7.png",
@@ -281,7 +229,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run12.png",
+        "file": "assets/caveman_run12.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run12.png",
@@ -290,7 +238,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run22.png",
+        "file": "assets/caveman_run22.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run22.png",
@@ -299,7 +247,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run32.png",
+        "file": "assets/caveman_run32.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run32.png",
@@ -308,7 +256,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run42.png",
+        "file": "assets/caveman_run42.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run42.png",
@@ -317,7 +265,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run52.png",
+        "file": "assets/caveman_run52.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run52.png",
@@ -335,7 +283,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run72.png",
+        "file": "assets/caveman_run72.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run72.png",
@@ -344,7 +292,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run8.png",
+        "file": "assets/caveman_run8.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run8.png",
@@ -353,7 +301,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run9.png",
+        "file": "assets/caveman_run9.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run9.png",
@@ -362,7 +310,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run10.png",
+        "file": "assets/caveman_run10.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run10.png",
@@ -371,7 +319,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run11.png",
+        "file": "assets/caveman_run11.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run11.png",
@@ -380,25 +328,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "caveman_run13.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "caveman_run14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "caveman_run14.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "caveman_run6A.png",
+        "file": "assets/caveman_run6A.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run6A.png",
@@ -407,7 +337,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run6B.png",
+        "file": "assets/caveman_run6B.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run6B.png",
@@ -416,7 +346,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_run_cycle_1.png",
+        "file": "assets/caveman_run_cycle_1.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_run_cycle_1.png",
@@ -425,7 +355,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "DinoBones.png",
+        "file": "assets/DinoBones.png",
         "kind": "image",
         "metadata": "",
         "name": "DinoBones.png",
@@ -434,7 +364,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_jump_3.png",
+        "file": "assets/caveman_jump_3.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_jump_3.png",
@@ -443,7 +373,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_jump_1.png",
+        "file": "assets/caveman_jump_1.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_jump_1.png",
@@ -452,7 +382,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "caveman_jump_2.png",
+        "file": "assets/caveman_jump_2.png",
         "kind": "image",
         "metadata": "",
         "name": "caveman_jump_2.png",
@@ -461,7 +391,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "bg_desert.jpg",
+        "file": "assets/bg_desert.jpg",
         "kind": "image",
         "metadata": "",
         "name": "bg_desert.jpg",
@@ -470,16 +400,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "../brand.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "..\\brand.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "bg_mountains.png",
+        "file": "assets/bg_mountains.png",
         "kind": "image",
         "metadata": "",
         "name": "bg_mountains.png",
@@ -488,7 +409,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "bg_dunes.png",
+        "file": "assets/bg_dunes.png",
         "kind": "image",
         "metadata": "",
         "name": "bg_dunes.png",
@@ -539,6 +460,24 @@
         "name": "assets\\firstRunner.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bg_desert.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bg_desert.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sabertooth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sabertooth.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -548,7 +487,7 @@
       "height": 550,
       "name": "Background",
       "tags": "",
-      "texture": "bg_desert.jpg",
+      "texture": "assets\\bg_desert.jpg",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 400,
       "variables": [],
@@ -2179,7 +2118,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sabertooth.png",
+                      "image": "assets\\sabertooth.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2218,8 +2157,8 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": true,
-                      "image": "sabertooth.png",
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\sabertooth.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2232,26 +2171,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 32,
-                            "y": 108
-                          },
-                          {
-                            "x": 471,
-                            "y": 152
-                          },
-                          {
-                            "x": 478,
-                            "y": 396
-                          },
-                          {
-                            "x": 12,
-                            "y": 397
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
