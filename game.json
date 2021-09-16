@@ -710,7 +710,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.98,
+        "zoomFactor": 0.5204000000000004,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -744,22 +744,6 @@
           "x": -100,
           "y": -166,
           "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 184,
-          "layer": "",
-          "locked": false,
-          "name": "Sun",
-          "persistentUuid": "c71c106d-234b-4c01-8f81-618777971d04",
-          "width": 190,
-          "x": 30,
-          "y": 10,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1026,7 +1010,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7469573883809132,
+        "zoomFactor": 0.757557388380913,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1053,22 +1037,6 @@
               "value": 0
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 184,
-          "layer": "",
-          "locked": false,
-          "name": "Sun",
-          "persistentUuid": "fa9c429a-c413-4604-b770-b4c7592fd282",
-          "width": 190,
-          "x": 30,
-          "y": 10,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -1164,8 +1132,8 @@
           "name": "Points",
           "persistentUuid": "5cdc4a31-7ba6-4a54-85d8-2dd9343d6095",
           "width": 0,
-          "x": 554,
-          "y": 76,
+          "x": 625,
+          "y": 32,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -1180,8 +1148,8 @@
           "name": "PointsValue",
           "persistentUuid": "94a37d1b-9ec4-49db-b108-711e5673bd70",
           "width": 0,
-          "x": 624,
-          "y": 76,
+          "x": 695,
+          "y": 32,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1206,28 +1174,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 58,
-          "layer": "",
-          "locked": false,
-          "name": "NameGame",
-          "persistentUuid": "950bb06b-d867-4a8e-88d4-19f7aa85da8c",
-          "width": 119,
-          "x": 24,
-          "y": 523,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 396,
           "layer": "",
           "locked": false,
           "name": "Bg_mountains",
           "persistentUuid": "8714f9ad-b1c1-4521-aa7e-95a873326840",
-          "width": 1154,
+          "width": 991,
           "x": -1,
           "y": -82,
           "zOrder": 0,
@@ -1259,7 +1211,26 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 0.5,
+                "blur": 0.5,
+                "distance": 1,
+                "padding": 0,
+                "quality": 1,
+                "rotation": 200
+              },
+              "stringParameters": {
+                "color": "#000000"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": [
             {
               "name": "Platform",
@@ -1311,16 +1282,16 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 71,
-                            "y": 1.5
+                            "x": 73,
+                            "y": 0
                           },
                           {
-                            "x": 116,
+                            "x": 128,
                             "y": 0
                           },
                           {
                             "x": 192,
-                            "y": 53.5
+                            "y": 50.5
                           },
                           {
                             "x": 192,
@@ -1379,7 +1350,24 @@
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1.2,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": []
         },
         {
@@ -1390,7 +1378,24 @@
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 0.8,
+                "contrast": 0.6,
+                "gamma": 0.9,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": []
         },
         {
@@ -1482,11 +1487,22 @@
           ],
           "effects": [
             {
-              "effectType": "",
+              "effectType": "DropShadow",
               "name": "Effect",
-              "doubleParameters": {},
-              "stringParameters": {},
-              "booleanParameters": {}
+              "doubleParameters": {
+                "alpha": 0.5,
+                "blur": 0.5,
+                "distance": 1,
+                "padding": 0,
+                "quality": 1,
+                "rotation": 200
+              },
+              "stringParameters": {
+                "color": "#000000"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
             }
           ],
           "behaviors": [
@@ -2696,7 +2712,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Caveman",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3894,6 +3910,38 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "CaveMan"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndGame\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -4047,7 +4095,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1,
+        "zoomFactor": 0.6623999999999999,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4062,8 +4110,8 @@
           "name": "Background",
           "persistentUuid": "dded34d2-114a-4ea4-bec2-492635d5229d",
           "width": 1419,
-          "x": -113.2578125,
-          "y": -163.01275634765625,
+          "x": -100,
+          "y": -166,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -4161,22 +4209,6 @@
           "x": 289,
           "y": 377,
           "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 184,
-          "layer": "",
-          "locked": false,
-          "name": "Sun",
-          "persistentUuid": "d116e20d-b08f-4c71-bde0-94405185e067",
-          "width": 190,
-          "x": 17,
-          "y": 16,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
