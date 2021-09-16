@@ -10,14 +10,14 @@
     "adaptGameResolutionAtRuntime": true,
     "folderProject": false,
     "orientation": "landscape",
-    "packageName": "com.example.gamename",
+    "packageName": "com.hmsv.firstrunner",
     "pixelsRounding": false,
     "projectUuid": "84cd327f-0890-4a41-85f9-2229ee48c057",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "Project",
+    "name": "First Runner Project",
     "author": "",
     "windowWidth": 800,
     "windowHeight": 600,
@@ -478,6 +478,15 @@
         "name": "assets\\sabertooth.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Idle-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -699,7 +708,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5204000000000004,
+        "zoomFactor": 0.34760000000000046,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -804,60 +813,6 @@
             "g": 255,
             "r": 255
           }
-        },
-        {
-          "name": "Sun",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [
-            {
-              "effectType": "Glow",
-              "name": "Effect",
-              "doubleParameters": {
-                "distance": 15,
-                "innerStrength": 1,
-                "outerStrength": 2
-              },
-              "stringParameters": {
-                "color": "#ffffff"
-              },
-              "booleanParameters": {}
-            }
-          ],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Sun.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "bold": true,
@@ -999,7 +954,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.757557388380913,
+        "zoomFactor": 0.5327573883809129,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1038,7 +993,7 @@
           "width": 52,
           "x": 844,
           "y": 431,
-          "zOrder": 0,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1073,8 +1028,8 @@
           "name": "MammothSpawner",
           "persistentUuid": "826da300-ed20-47b9-9599-61df3e3a15fb",
           "width": 171,
-          "x": 948,
-          "y": 365,
+          "x": 1258,
+          "y": 359,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -1105,7 +1060,7 @@
           "name": "EagleSpawner",
           "persistentUuid": "1da82535-fa45-42f5-a2dd-149462ea6167",
           "width": 81,
-          "x": 1290,
+          "x": 1331,
           "y": 182,
           "zOrder": 9,
           "numberProperties": [],
@@ -1163,28 +1118,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 58,
-          "layer": "",
-          "locked": false,
-          "name": "NameGame",
-          "persistentUuid": "950bb06b-d867-4a8e-88d4-19f7aa85da8c",
-          "width": 119,
-          "x": 24,
-          "y": 523,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 396,
           "layer": "",
           "locked": false,
           "name": "Bg_mountains",
           "persistentUuid": "8714f9ad-b1c1-4521-aa7e-95a873326840",
-          "width": 991,
+          "width": 1139,
           "x": -1,
           "y": -82,
           "zOrder": 0,
@@ -1203,7 +1142,7 @@
           "width": 1141,
           "x": -2,
           "y": -69,
-          "zOrder": 1,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1916,85 +1855,12 @@
           ]
         },
         {
-          "name": "Sun",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [
-            {
-              "effectType": "Glow",
-              "name": "Effect",
-              "doubleParameters": {
-                "distance": 15,
-                "innerStrength": 1,
-                "outerStrength": 2
-              },
-              "stringParameters": {
-                "color": "#ffffff"
-              },
-              "booleanParameters": {}
-            }
-          ],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Sun.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "Spear",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.2,
-                "blur": 0.2,
-                "distance": 0.1,
-                "padding": 0,
-                "quality": 0.2,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "DestroyOutside",
@@ -2009,11 +1875,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.07999999821186066,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "spear.png",
+                      "image": "assets\\Idle-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2063,26 +1929,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.5,
-                "blur": 0.5,
-                "distance": 1,
-                "padding": 0,
-                "quality": 1,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "Platform",
@@ -2327,26 +2174,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.5,
-                "blur": 0.5,
-                "distance": 1,
-                "padding": 0,
-                "quality": 1,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "Platform",
@@ -2472,26 +2300,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "DropShadow",
-              "name": "Effect",
-              "doubleParameters": {
-                "alpha": 0.5,
-                "blur": 0.5,
-                "distance": 1,
-                "padding": 0,
-                "quality": 1,
-                "rotation": 200
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {
-                "shadowOnly": false
-              }
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "Platform",
