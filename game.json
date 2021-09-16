@@ -1139,10 +1139,10 @@
           "locked": false,
           "name": "Bg_dunes",
           "persistentUuid": "810074fc-054b-420a-8959-d490132f7ea0",
-          "width": 1141,
+          "width": 1139,
           "x": -2,
           "y": -69,
-          "zOrder": 0,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
