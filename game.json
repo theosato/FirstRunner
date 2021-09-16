@@ -539,24 +539,6 @@
         "name": "assets\\firstRunner.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "../../../../../../Downloads/assets/firstRunner.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "..\\..\\..\\..\\..\\..\\Downloads\\assets\\firstRunner.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "firstRunner.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "firstRunner.png",
-        "smoothed": true,
-        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1235,6 +1217,22 @@
           "x": 1176,
           "y": 493,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 58,
+          "layer": "",
+          "locked": false,
+          "name": "NameGame",
+          "persistentUuid": "950bb06b-d867-4a8e-88d4-19f7aa85da8c",
+          "width": 119,
+          "x": 24,
+          "y": 523,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2038,7 +2036,26 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 0.2,
+                "blur": 0.2,
+                "distance": 0.1,
+                "padding": 0,
+                "quality": 0.2,
+                "rotation": 200
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": [
             {
               "name": "DestroyOutside",
@@ -2107,7 +2124,26 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 0.5,
+                "blur": 0.5,
+                "distance": 1,
+                "padding": 0,
+                "quality": 1,
+                "rotation": 200
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": [
             {
               "name": "Platform",
@@ -2371,7 +2407,26 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 0.5,
+                "blur": 0.5,
+                "distance": 1,
+                "padding": 0,
+                "quality": 1,
+                "rotation": 200
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": [
             {
               "name": "Platform",
@@ -2497,7 +2552,26 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 0.5,
+                "blur": 0.5,
+                "distance": 1,
+                "padding": 0,
+                "quality": 1,
+                "rotation": 200
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": [
             {
               "name": "Platform",
